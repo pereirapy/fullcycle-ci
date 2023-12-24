@@ -1,0 +1,23 @@
+{
+  "name": "fullcycleci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fullName.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pereirapy/fullcycle-ci.git"
+  },
+  "author": "Rodrigo Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pereirapy/fullcycle-ci/issues"
+  },
+  "homepage": "https://github.com/pereirapy/fullcycle-ci#readme",
+  "dependencies": {
+    "@types/jest": "^29.5.11",
+    "jest": "^29.7.0"
+  }
+}

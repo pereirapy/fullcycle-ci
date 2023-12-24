@@ -1,13 +1,9 @@
-function generateFullName(first,last) {
-  return `FullName: ${first} ${last}`
-}
+const generateFullName = (first, last) =>
+	`FullName: ${first} ${last}`;
 
-function generateLastName(last) {
-  return `LastName: ${last}`
-}
+const generateLastName = (last) => `LastName: ${last}`;
 
 module.exports = {
-  generateFullName,
-  generateLastName
-}
-
+	generateFullName,
+	generateLastName,
+};

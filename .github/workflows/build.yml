@@ -1,4 +1,4 @@
-name: Build
+name: Build-ci-sonarclound
 on:
   push:
     branches:
@@ -6,6 +6,11 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
+  run-ci-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm run test -coverprofile=coverage.out
   sonarcloud:
     name: SonarCloud
     runs-on: ubuntu-latest
